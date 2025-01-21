@@ -1,6 +1,7 @@
-# [RegisterKaro Homepage Colne](https://register-karo-homepage-clone.vercel.app/)
+# [RegisterKaro Homepage Clone](https://register-karo-homepage-clone.vercel.app/)
 
- A clone of RegisterKaro Homepage
+A clone of RegisterKaro Homepage
+Live Link(https://register-karo-homepage-clone.vercel.app/)
 
 ## Tech Stack
 
