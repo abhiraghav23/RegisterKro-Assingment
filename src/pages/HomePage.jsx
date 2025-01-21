@@ -13,6 +13,7 @@ import StatisticsSection from "../components/StatisticsSection"
 import WelcomeSection from "../components/WelcomeSection"
 import CompaniesLogoStrip from "../components/CompaniesLogoStrip"
 import Footer from "../components/Footer"
+import TestimonialsSection from "../components/TestimonialsSection"
 
 function HomePage() {
   return (
@@ -26,7 +27,9 @@ function HomePage() {
       <HappyClientsSection />
       <GetStartedInfo />
       <BlogSection />
+      <TestimonialsSection />
       <FAQSection />
+      <MobileAppSection />
       <StatisticsSection />
       <WelcomeSection />  
       <CompaniesLogoStrip />

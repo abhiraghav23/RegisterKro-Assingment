@@ -27,7 +27,7 @@ const HeroSection = () => {
   return (
     <section className="relative h-[85%] w-full bg-gradient-to-br from-[#ffffff] via-[#fff6ea] to-[#e6eef8]">
       {/* Background Image */}
-      <div className="hidden lg:block absolute bg-right-bottom h-full bg-[url('/src/assets/images/hero.svg')] bg-no-repeat w-full bg-auto z-[0]"></div>
+      <div className="hidden lg:block absolute bg-right-bottom h-full bg-[url('/src/assets/images/hero.png')] bg-no-repeat w-full bg-auto z-[0]"></div>
 
       {/* Right and Left Sections */}
       <div className="h-full w-full flex justify-between ">

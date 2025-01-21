@@ -50,22 +50,24 @@ const TestimonialsSection = () => {
   };
 
   return (
-    <div className="bg-blue-900 py-12 text-white">
-      <div className="mb-8">
-        <h1 className="text-3xl font-semibold">What people says about us</h1>
+    <div className="bg-blue-900 py-16 text-white">
+      <div className="max-w-6xl mx-auto text-center">
+        <h1 className="text-4xl font-bold mb-6">What People Say About Us</h1>
       </div>
 
-      <div className="relative px-4 md:px-20">
-        <div className="absolute top-0 right-4 flex gap-2">
+      <div className="relative px-4 md:px-10">
+        <div className="absolute top-1/2 transform -translate-y-1/2 left-4">
           <button
             onClick={handlePrev}
-            className="bg-yellow-500 text-blue-900 p-2 rounded-full shadow-md hover:bg-yellow-600"
+            className="bg-yellow-500 text-blue-900 p-3 rounded-full shadow-md hover:bg-yellow-600"
           >
             &#8592;
           </button>
+        </div>
+        <div className="absolute top-1/2 transform -translate-y-1/2 right-4">
           <button
             onClick={handleNext}
-            className="bg-yellow-500 text-blue-900 p-2 rounded-full shadow-md hover:bg-yellow-600"
+            className="bg-yellow-500 text-blue-900 p-3 rounded-full shadow-md hover:bg-yellow-600"
           >
             &#8594;
           </button>
@@ -73,23 +75,23 @@ const TestimonialsSection = () => {
 
         <div
           ref={scrollRef}
-          className="flex overflow-x-auto gap-8 scrollbar-hide scroll-smooth"
+          className="flex overflow-x-auto gap-6 scrollbar-hide scroll-smooth px-4"
         >
           {testimonials.map((testimonial, index) => (
             <div
               key={index}
-              className="bg-white text-black rounded-lg shadow-lg p-6 flex-shrink-0 w-96"
+              className="bg-white text-black rounded-lg shadow-lg p-6 flex-shrink-0 w-80 md:w-96"
             >
               <div className="mb-4">
-                <span className="text-2xl text-yellow-500">&ldquo;</span>
-                <p className="text-gray-700 mt-2">{testimonial.text}</p>
+                <span className="text-4xl text-yellow-500">&ldquo;</span>
+                <p className="text-gray-700 mt-4 line-clamp-5">{testimonial.text}</p>
               </div>
-              <div className="flex items-center mt-4">
+              <div className="flex items-center mt-6">
                 <div className="w-12 h-12 flex justify-center items-center rounded-full bg-gray-200 text-2xl mr-4">
                   {testimonial.avatar}
                 </div>
                 <div>
-                  <p className="font-bold">{testimonial.author}</p>
+                  <p className="font-bold text-lg">{testimonial.author}</p>
                   <p className="text-sm text-gray-500">{testimonial.role}</p>
                 </div>
               </div>
@@ -108,19 +110,6 @@ const TestimonialsSection = () => {
             </div>
           ))}
         </div>
-      </div>
-
-      <div className="flex justify-center mt-4">
-        {testimonials.map((_, index) => (
-          <span
-            key={index}
-            className={`h-2 w-2 mx-1 rounded-full ${
-              Math.floor(scrollRef.current?.scrollLeft / 500) === index
-                ? "bg-white"
-                : "bg-gray-500"
-            }`}
-          ></span>
-        ))}
       </div>
     </div>
   );
