@@ -34,8 +34,9 @@ Tool Used - [Lighthouse by Google](https://chromewebstore.google.com/detail/ligh
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/AadityaNayak/TaskBoard.git
-cd TaskBoard
+git clone https://github.com/AadityaNayak/RegisterKaroHomepage_Clone
+.git
+cd RegisterKaroHomepage_Clone
 ```
 
 ---
