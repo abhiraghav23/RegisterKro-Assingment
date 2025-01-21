@@ -20,7 +20,7 @@ const Navbar = () => {
         <div className="flex items-center space-x-2">
           {/* Replace this with your actual logo */}
           <img
-            src="src/assets/images/logo.png"
+            src="static/logo_nav.png"
             alt="Logo"
             className="h-8"
           />

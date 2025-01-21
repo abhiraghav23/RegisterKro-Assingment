@@ -8,24 +8,24 @@ function TrustedBy() {
       </div>
       <div className="flex justify-evenly items-center flex-wrap p-5">
         <img
-          src="src/assets/images/companies_logos/monday.png"
+          src="static/monday.png"
           alt="Monday"
           className="h-6"
         />
         <img
-          src="/src/assets/images/companies_logos/oracle.png"
+          src="static/oracle.png"
+          alt="Monday"
+          className="h-4"
+        />
+        <img
+          src="static/monday.png"
           alt="Monday"
           className="h-6"
         />
         <img
-          src="src/assets/images/companies_logos/monday.png"
+          src="static/oracle.png"
           alt="Monday"
-          className="h-6"
-        />
-        <img
-          src="/src/assets/images/companies_logos/oracle.png"
-          alt="Monday"
-          className="h-6"
+          className="h-4"
         />
       </div>
     </section>

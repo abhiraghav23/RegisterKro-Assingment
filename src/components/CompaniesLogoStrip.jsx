@@ -5,35 +5,38 @@ function CompaniesLogoStrip() {
     <section className="flex flex-col justify-between p-10">
       <div className="flex justify-evenly items-center flex-wrap p-5">
         <img
-          src="src/assets/images/companies_logos/coinbase.png"
+          src="static/coinbase.png"
           alt="Coinbase"
           className="h-10"
         />
         <img
-          src="/src/assets/images/companies_logos/spotify.png"
+          src="static/spotify.png"
           alt="Spotify"
           className="h-10"
         />
+        
         <img
-          src="src/assets/images/companies_logos/coinbase.png"
+          src="static/coinbase.png"
           alt="Coinbase"
           className="h-10"
         />
         <img
-          src="/src/assets/images/companies_logos/spotify.png"
+          src="static/spotify.png"
           alt="Spotify"
           className="h-10"
         />
+        
         <img
-          src="src/assets/images/companies_logos/coinbase.png"
+          src="static/coinbase.png"
           alt="Coinbase"
           className="h-10"
         />
         <img
-          src="/src/assets/images/companies_logos/spotify.png"
+          src="static/spotify.png"
           alt="Spotify"
           className="h-10"
         />
+        
         
       </div>
     </section>

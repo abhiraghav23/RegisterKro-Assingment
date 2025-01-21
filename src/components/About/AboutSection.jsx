@@ -24,7 +24,7 @@ const AboutSection = () => {
         </div>
         <div className="w-[60%] md:w-[35%] flex justify-center">
           <img
-            src="/src/assets/images/about.png"
+            src="static/about.png"
             alt="About Us"
             className="rounded-lg shadow-md"
           />

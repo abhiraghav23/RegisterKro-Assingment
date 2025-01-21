@@ -39,7 +39,7 @@ const VideoIntroductionSection = () => {
         <div className="w-[70%] md:w-[48%] flex justify-center">
           <div className="relative">
             <img
-              src="src/assets/images/youtube_video.png"
+              src="static/youtube_video.png"
               alt="Video Introduction"
               className="rounded-lg shadow-md"
             />

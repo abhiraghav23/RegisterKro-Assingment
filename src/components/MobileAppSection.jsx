@@ -33,7 +33,7 @@ const MobileAppSection = () => {
         <div className="md:w-1/2 flex justify-center md:justify-end max-h-[500px]">
           <div className=" max-h-[100%] overflow-hidden">
             <img
-              src="src/assets/images/mobile_image.png"
+              src="static/mobile_image.png"
               alt="Phone 2"
               className="w-60 md:w-72 lg:w-60"
             />

@@ -8,7 +8,7 @@ const BlogSection = () => {
       title: "Small business & Startup",
       description: "Like to know the secrets of transforming a 2-14 team into a 3x Super Bowl winning Dynasty?",
       tags: ["Tax & Audit", "Management"],
-      image: "src/assets/images/blog.png",
+      image: "static/blog.png",
     },
     {
       author: "Mahesh Kumar",
@@ -16,7 +16,7 @@ const BlogSection = () => {
       title: "Scale-Up Company Offer",
       description: "Mental models are simple expressions of complex processes or relationships.",
       tags: ["Tax", "Research", "Compliance"],
-      image: "src/assets/images/blog.png",
+      image: "static/blog.png",
     },
     {
       author: "Rakhi Verma",
@@ -24,7 +24,7 @@ const BlogSection = () => {
       title: "Growing Business Package",
       description: "Introduction to Wireframing and its Principles. Learn from the best in the industry.",
       tags: ["Audit", "Money Back"],
-      image: "src/assets/images/blog.png",
+      image: "static/blog.png",
     },
     {
       author: "Karan Kumar",
@@ -32,7 +32,7 @@ const BlogSection = () => {
       title: "Scale-Up Company Offer",
       description: "Collaboration can make our teams stronger, and our individual designs better.",
       tags: ["Money", "Management"],
-      image: "src/assets/images/blog.png",
+      image: "static/blog.png",
     },
     {
       author: "Richa Singh",
@@ -40,7 +40,7 @@ const BlogSection = () => {
       title: "Scale-Up Company Offer",
       description: "JavaScript frameworks make development easy with extensive features and functionalities.",
       tags: ["Tax Return", "News", "Audit"],
-      image: "src/assets/images/blog.png",
+      image: "static/blog.png",
     },
     {
       author: "Miss Nora",
@@ -48,7 +48,7 @@ const BlogSection = () => {
       title: "Scale-Up Company Offer",
       description: "Starting a community doesn't need to be complicated, but how do you get started?",
       tags: ["Private Limited Company", "Customer Success"],
-      image: "src/assets/images/blog.png",
+      image: "static/blog.png",
     },
   ];
 
