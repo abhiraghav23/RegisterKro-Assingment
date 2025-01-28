@@ -3,50 +3,39 @@ import React, { useRef } from "react";
 const TestimonialsSection = () => {
   const testimonials = [
     {
-      text: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat aute irure sint amet occaecat cupidatat non proident ea commodo consequat aute irure sint amet occaecat cupidatat non proident.",
+      text: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat aute irure sint amet occaecat cupidatat non proident.",
       author: "Chris",
       role: "President and CEO, PrintReach, USA",
       rating: 4.5,
-      avatar: "👤",
+      avatar:
+        "https://imgs.search.brave.com/5TDF9hL1fiUvpeWoLhfSD3oOkswWCowMXmTWY0vKo2E/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/cHJlbWl1bS1waG90/by9wb3J0cmFpdC1t/YW4td2VhcmluZy1z/dW5nbGFzc2VzXzEw/NDg5NDQtMTYxOTgu/anBnP3NlbXQ9YWlz/X2h5YnJpZA",
     },
     {
       text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
       author: "Jane",
       role: "CEO, TechCorp, USA",
       rating: 4,
-      avatar: "👩‍💼",
+      avatar:
+        "https://imgs.search.brave.com/5TDF9hL1fiUvpeWoLhfSD3oOkswWCowMXmTWY0vKo2E/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/cHJlbWl1bS1waG90/by9wb3J0cmFpdC1t/YW4td2VhcmluZy1z/dW5nbGFzc2VzXzEw/NDg5NDQtMTYxOTgu/anBnP3NlbXQ9YWlz/X2h5YnJpZA",
     },
     {
-      text: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.",
+      text: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.ullamco laboris nisi ut aliquip ex ea commodo consequat",
       author: "Mark",
       role: "Founder, InnovateX, UK",
       rating: 5,
-      avatar: "👨‍💻",
-    },
-    {
-      text: "Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur.",
-      author: "Alice",
-      role: "CTO, DevSolutions, USA",
-      rating: 4.8,
-      avatar: "👩‍💻",
-    },
-    {
-      text: "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti.",
-      author: "John",
-      role: "Manager, BuildWell, Canada",
-      rating: 4.2,
-      avatar: "👨‍🔧",
+      avatar:
+        "https://imgs.search.brave.com/5TDF9hL1fiUvpeWoLhfSD3oOkswWCowMXmTWY0vKo2E/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/cHJlbWl1bS1waG90/by9wb3J0cmFpdC1t/YW4td2VhcmluZy1z/dW5nbGFzc2VzXzEw/NDg5NDQtMTYxOTgu/anBnP3NlbXQ9YWlz/X2h5YnJpZA",
     },
   ];
 
   const scrollRef = useRef(null);
 
   const handleNext = () => {
-    scrollRef.current.scrollBy({ left: 500, behavior: "smooth" });
+    scrollRef.current.scrollBy({ left: 350, behavior: "smooth" });
   };
 
   const handlePrev = () => {
-    scrollRef.current.scrollBy({ left: -500, behavior: "smooth" });
+    scrollRef.current.scrollBy({ left: -350, behavior: "smooth" });
   };
 
   return (
@@ -56,23 +45,25 @@ const TestimonialsSection = () => {
       </div>
 
       <div className="relative px-4 md:px-10">
-        <div className="absolute top-1/2 transform -translate-y-1/2 left-4">
+        {/* Navigation Buttons */}
+        <div className="absolute top-1/2 transform -translate-y-1/2 left-4 z-10">
           <button
             onClick={handlePrev}
-            className="bg-yellow-500 text-blue-900 p-3 rounded-full shadow-md hover:bg-yellow-600"
+            className="bg-white text-blue-900 p-3 rounded-full shadow-md hover:bg-yellow-500"
           >
             &#8592;
           </button>
         </div>
-        <div className="absolute top-1/2 transform -translate-y-1/2 right-4">
+        <div className="absolute top-1/2 transform -translate-y-1/2 right-4 z-10">
           <button
             onClick={handleNext}
-            className="bg-yellow-500 text-blue-900 p-3 rounded-full shadow-md hover:bg-yellow-600"
+            className="bg-white text-blue-900 p-3 rounded-full shadow-md hover:bg-yellow-500"
           >
             &#8594;
           </button>
         </div>
 
+        {/* Testimonial Cards */}
         <div
           ref={scrollRef}
           className="flex overflow-x-auto gap-6 scrollbar-hide scroll-smooth px-4"
@@ -82,34 +73,67 @@ const TestimonialsSection = () => {
               key={index}
               className="bg-white text-black rounded-lg shadow-lg p-6 flex-shrink-0 w-80 md:w-96"
             >
-              <div className="mb-4">
-                <span className="text-4xl text-yellow-500">&ldquo;</span>
-                <p className="text-gray-700 mt-4 line-clamp-5">{testimonial.text}</p>
-              </div>
-              <div className="flex items-center mt-6">
-                <div className="w-12 h-12 flex justify-center items-center rounded-full bg-gray-200 text-2xl mr-4">
-                  {testimonial.avatar}
+              {/* Inverted Commas and Stars */}
+              <div className="flex justify-between items-center mb-4">
+                {/* Inverted Comma */}
+                <span
+                  className="text-5xl font-bold"
+                  style={{
+                    background: "linear-gradient(to right, orange, blue)",
+                    WebkitBackgroundClip: "text",
+                    color: "transparent",
+                  }}
+                >
+                  “
+                </span>
+                {/* Star Ratings */}
+                <div
+                  className="flex"
+                  style={{ width: "139px", height: "28px", overflow: "hidden" }}
+                >
+                  {Array.from({ length: 5 }, (_, i) => (
+                    <span
+                      key={i}
+                      className={`text-yellow-500 text-lg ${
+                        i < Math.round(testimonial.rating) ? "" : "opacity-50"
+                      }`}
+                      style={{ width: "28px", height: "28px" }}
+                    >
+                      &#9733;
+                    </span>
+                  ))}
                 </div>
+              </div>
+
+              {/* Testimonial Text */}
+              <p className="text-gray-700 text-sm mb-4">{testimonial.text}</p>
+
+              {/* Author Details */}
+              <div className="flex items-center">
+                {/* Avatar */}
+                <img
+                  src={testimonial.avatar}
+                  alt={testimonial.author}
+                  className="w-12 h-12 rounded-full object-cover mr-4"
+                />
                 <div>
                   <p className="font-bold text-lg">{testimonial.author}</p>
                   <p className="text-sm text-gray-500">{testimonial.role}</p>
                 </div>
               </div>
-              <div className="flex mt-4">
-                {Array.from({ length: 5 }, (_, i) => (
-                  <span
-                    key={i}
-                    className={`text-yellow-500 text-lg ${
-                      i < Math.floor(testimonial.rating) ? "" : "opacity-50"
-                    }`}
-                  >
-                    &#9733;
-                  </span>
-                ))}
-              </div>
             </div>
           ))}
         </div>
+      </div>
+
+      {/* Pagination */}
+      <div className="flex justify-center mt-6">
+        {testimonials.map((_, index) => (
+          <div
+            key={index}
+            className="w-3 h-3 rounded-full bg-gray-400 mx-1 cursor-pointer hover:bg-yellow-500"
+          ></div>
+        ))}
       </div>
     </div>
   );

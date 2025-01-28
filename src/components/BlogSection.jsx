@@ -55,7 +55,7 @@ const BlogSection = () => {
   return (
     <div className="bg-gray-50 py-12">
       <div className="text-center mb-8">
-        <h2 className="text-yellow-500 text-sm tracking-wide uppercase">Explore Our Blogs</h2>
+        <h2 className="text-yellow-500 text-sm tracking-wide uppercase ">Explore Our Blogs</h2>
         <h1 className="text-3xl font-semibold">Accelerate Digital Transformation</h1>
       </div>
 

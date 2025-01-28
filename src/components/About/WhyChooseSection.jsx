@@ -1,35 +1,35 @@
+import React from "react";
+
 const WhyChooseSection = () => {
   const benefits = [
     {
       title: "Confidential & Safe",
       description: "All your private information is safe with us",
-      icon: "🛡️",
+      image: "svg/Symbol-1.png", // Replace with the actual image URL
       bgColor: "bg-red-50",
     },
     {
       title: "No Hidden Fee",
-      description:
-        "Everything is put before you with no hidden charges or conditions",
-      icon: "✅",
+      description: "Everything is put before you with no hidden charges or conditions",
+      image: "svg/Symbol-2.png", // Replace with the actual image URL
       bgColor: "bg-green-50",
     },
     {
       title: "Guaranteed Satisfaction",
-      description:
-        "We ensure that you stay 100% satisfied with our offered services",
-      icon: "😊",
+      description: "We ensure that you stay 100% satisfied with our offered services",
+      image: "svg/Symbol-03.png", // Replace with the actual image URL
       bgColor: "bg-blue-50",
     },
     {
       title: "Expert CA/CS Assistance",
       description: "Prompt support from our in-house expert professionals",
-      icon: "👨‍💼",
+      image: "svg/Symbol-4.png", // Replace with the actual image URL
       bgColor: "bg-pink-50",
     },
     {
       title: "Expert CA/CS Assistance",
       description: "Prompt support from our in-house expert professionals",
-      icon: "👨‍💼",
+      image: "svg/Symbol-1.png", // Replace with the actual image URL
       bgColor: "bg-yellow-50",
     },
   ];
@@ -53,7 +53,11 @@ const WhyChooseSection = () => {
           key={index}
           className={`flex flex-col items-center text-center shadow-md p-6 rounded-lg hover:shadow-lg transition-shadow w-full md:w-1/4 ${benefit.bgColor}`}
         >
-          <div className="text-yellow-500 text-4xl mb-4">{benefit.icon}</div>
+          <img
+            src={benefit.image}
+            alt={`${benefit.title} icon`}
+            className="mb-4 w-10 h-12 object-contain"
+          />
           <h3 className="font-bold text-lg">{benefit.title}</h3>
           <p className="text-gray-600 mt-2">{benefit.description}</p>
         </div>

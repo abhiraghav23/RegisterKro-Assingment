@@ -7,33 +7,33 @@ function CompaniesLogoStrip() {
         <img
           src="static/coinbase.png"
           alt="Coinbase"
-          className="h-10"
+          className="h-12"
         />
         <img
           src="static/spotify.png"
           alt="Spotify"
+          className="h-12"
+        />
+        
+        <img
+          src="static/Slack.png"
+          alt="Slack"
+          className="h-10"
+        />
+        <img
+          src="static/webflow.png"
+          alt="Webflow"
           className="h-10"
         />
         
         <img
           src="static/coinbase.png"
           alt="Coinbase"
-          className="h-10"
+          className="h-12"
         />
         <img
-          src="static/spotify.png"
-          alt="Spotify"
-          className="h-10"
-        />
-        
-        <img
-          src="static/coinbase.png"
-          alt="Coinbase"
-          className="h-10"
-        />
-        <img
-          src="static/spotify.png"
-          alt="Spotify"
+          src="static/Zoom.png"
+          alt="Zoom"
           className="h-10"
         />
         

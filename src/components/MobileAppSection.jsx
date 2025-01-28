@@ -18,13 +18,22 @@ const MobileAppSection = () => {
               href="#"
               className="flex items-center bg-white text-gray-900 font-semibold px-4 py-2 rounded-md shadow hover:shadow-lg"
             >
-              <FaApple className="text-2xl mr-2" /> Get it on App Store
+              <FaApple className="text-green-500 text-2xl mr-2" />
+              <div>
+              <span className="text-black-500 text-sm">Get it on </span><br/>
+              <span className="font-bold text-lg">AppStore</span>
+              </div>
             </a>
             <a
               href="#"
               className="flex items-center bg-white text-gray-900 font-semibold px-4 py-2 rounded-md shadow hover:shadow-lg"
             >
-              <FaGooglePlay className="text-2xl mr-2" /> Get it on Google Play
+              <FaGooglePlay className="text-green-500 text-2xl mr-2" />
+             <div>
+             <span className="text-black-500 text-sm">Get it on</span>
+              <br />
+             <span className="font-bold text-lg">Playstore</span>
+             </div>
             </a>
           </div>
         </div>

@@ -10,22 +10,22 @@ function TrustedBy() {
         <img
           src="static/monday.png"
           alt="Monday"
-          className="h-6"
+          className="h-6 w-100"
         />
         <img
           src="static/oracle.png"
           alt="Monday"
-          className="h-4"
+          className="h-3 w-100"
         />
         <img
-          src="static/monday.png"
-          alt="Monday"
-          className="h-6"
+          src="static/Morpheus_logo.png"
+          alt="Morepheus"
+          className="h-10 w-100"
         />
         <img
-          src="static/oracle.png"
-          alt="Monday"
-          className="h-4"
+          src="static/samsung.png"
+          alt="samsung"
+          className="h-20 w-100"
         />
       </div>
     </section>

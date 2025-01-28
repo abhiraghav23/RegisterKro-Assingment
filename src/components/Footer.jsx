@@ -8,10 +8,10 @@ const FooterSection = () => {
   };
 
   return (
-    <footer className="bg-blue-900 text-white py-10 px-4">
+    <footer className="bg-blue-900 text-white py-10 px-4">  
       <div className="max-w-7xl mx-auto flex flex-wrap justify-between">
         {/* Social Media and Intro */}
-        <div className="w-full md:w-1/5 mb-8 md:mb-0">
+        <div className="w-full md:w-1/5 mb-8 md:mb-0 ">
           <p className="mb-4 text-sm">Design outstanding interfaces with advanced Figma features in a matter of minutes.</p>
           <div className="flex space-x-4">
             <a href="#" className="text-white text-lg">
@@ -31,7 +31,7 @@ const FooterSection = () => {
 
         {/* Links Section */}
         <div className="w-full md:w-1/5 mb-8 md:mb-0">
-          <h4 className="text-orange-400 font-bold mb-4">START A BUSINESS</h4>
+          <h4 className="text-orange-400  font-bold mb-4 ">START A BUSINESS</h4>
           <ul className="space-y-2 text-sm">
             <li><a href="#" className="hover:underline">Features</a></li>
             <li><a href="#" className="hover:underline">Solutions</a></li>
